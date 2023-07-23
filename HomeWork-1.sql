@@ -3,9 +3,11 @@
 Заполните БД данными. Добавьте скриншот на платформу в качестве ответа на ДЗ
 */
 
-
-CREATE DATABASE HomeWork_1;
+DROP DATABASE IF EXISTS homework_1;
+CREATE DATABASE IF NOT EXISTS HomeWork_1;
 USE HomeWork_1;
+
+DROP TABLE IF EXISTS `phones`;
 CREATE TABLE phones
 (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
